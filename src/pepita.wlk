@@ -1,4 +1,5 @@
 object pepita {
+	
 	var energia = 0
 
 	method estaCansada() {
@@ -26,10 +27,8 @@ object pepita {
 		if(energia.between(300, 400))
 			sumar = 10
 		
-		
 		if(energia % 20 == 0)
 			sumar = sumar + 15
-		
 		
 		return (energia/5 + sumar)
 	}
@@ -51,7 +50,10 @@ object pepita {
 	
 }
 
+
+
 object alpiste {
+	
 	var gramos = 10
 	
 	method energiaQueOtorga() { 
@@ -63,13 +65,18 @@ object alpiste {
 	}	
 }
 
+
+
 object manzana {
 	method energiaQueOtorga() { 
 		return 50
 	}	
 }
 
+
+
 object mijo {
+	
 	var mojado = false
 	var restar = 0
 	
@@ -91,7 +98,10 @@ object mijo {
 	}
 }
 
+
+
 object canelon {
+	
 	var salsa = 0
 	var queso = 0
 	
@@ -113,5 +123,14 @@ object canelon {
 	
 	method energiaQueOtorga() {
 		return 20 + salsa + queso
+	}
+}
+
+object roque {
+	method entrenar() {
+		pepita.vola(10)
+		pepita.come(alpiste)
+		pepita.vola(5)
+		pepita.haceLoQueQuieras()
 	}
 }
